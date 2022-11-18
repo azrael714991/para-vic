@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>❤️ Para Vic ❤️</title>
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./script1.js"></script>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./style1.css">
+
+    <link rel="preload" as="image" href="./imagem/fundo2.gif">
+    <link rel="preload" as="image" href="./imagem/fundo3.gif">
+    <link rel="preload" as="image" href="./imagem/vic6.png">
+    <link rel="preload" as="image" href="./imagem/fundo7.gif">
+    <link rel="preload" as="image" href="imagem/fundo6.gif">
+    <link rel="preload" as="audio" href="./imagem/audiosia.mp3">
+
+</head>
+<body class="fundo1">
+
+    <div class="pop-up">
+        <h1 class="text-muted">Título teste</h1>
+        <div>Descriçao teste</div>
+        <section class="text-center">
+            <button class="btn-azul" onclick="mostraPopUp(false)">Fechar</button>
+        </section>
+    </div>
+    
+    <div class="container d-flex justify-content-center">
+
+        <div id="tela1" class="tela tela-centro visivel">
+            <h1 class="text-muted">Bem-vinda</h1>
+            <p>Você está pronta?</p>
+            <button class="mudaTela btn-azul">Começar</button>
+
+            <!--
+            <div class="mt-5">
+                <a href="#" class="opcoes">Ver opções</a>
+                <div class="invisivel opcoes">
+                    <p>Se quiser, você pode escolher começar de uma tela específica:</p>
+                    <button class="btn-rosa mudaTela" tela="">Início</button>
+                    <button class="btn-rosa">Mensagens</button>
+                    <button class="btn-rosa">Momentos marcantes</button>
+                    <button class="btn-rosa">O que você mudou em mim</button>
+                    <button class="btn-rosa">Nossa primeira conversa</button>
+                    <button class="btn-rosa">Memorial</button>
+                    <button class="btn-rosa">Declaração</button>
+                    <button class="btn-rosa">Final</button>
+                </div>
+            </div>
+            -->
+
+        </div>
+
+        <div id="tela2" class="tela" fundo="fundo1">
+            <p class="text-muted"><small>Antes de começar, confirme:</small>
+                <br>
+            <strong>Você conhece esta pessoa?</strong></p>
+            <img src="./imagem/ptk.png" class="custom" width="150" alt="">
+            <br>
+
+            <button class="mudaTela btn-azul btn-block mt-5" animacao="null" tempoAnimacao="500">Sim</button>
+            <br>
+            <button class="btn-vermelho btn-block" onclick="alert('Então você não deveria estar acessando este site. Vaza, mano!');window.location.href='https://www.dicio.com.br/trouxa/'; " >Não</button>
+
+        </div>
+
+        <div id="tela3" class="tela">
+            <p><strong>Tem certeza?</strong><br> Olhe bem pra isso:</p>
+            <img src="imagens/tela3.png" class="custom" width="150" alt="">
+
+            <br>
+            <button class="mudaTela btn-block btn-azul">Sim, infelizmente</button>
+            <br>
+            <button class="btn-block btn-vermelho" onclick="alert('Tudo bem, eu entendo sua vergonha.');window.location.href='https://www.dicio.com.br/otario/'; " >Não, Deus me livre</button>
+        </div>
+
+        <div id="tela4" class="tela">
+            <h2>Espere...</h2>
+
+            <img src="imagens/tela4.jpg" class="custom mb-4" width="150" alt="">
+
+            <p>É a <strong>Victoria</strong> que está acessando essa página agora?
+                <br><small class="text-muted" style="font-weight: 700;">Sim, Victoria</small>
+            </p>
+
+            <button class="mudaTela btn-azul">Sim, sou eu</button>
+            <button class="mudaTela btn-vermelho btn-block" onclick="alert('Você deveria ter vergonha de estar aqui!\n\nBom, eu sei que mesmo eu te levando para outra página, você voltará aqui depois porque sua curiosidade o obriga a isso, então pode seguir para a próxima página.');" >Não, eu sou uma amiga ou conhecido da Vic que está acessando esse site, mesmo o Conrado tendo dito pra ela não passar para ninguém, então ela não pode se conter e me enviou esse link. Esse botão é gigante.</button>
+        </div>
+
+        <div id="tela5" class="tela">
+            
+            <hr>
+            <p><small>Quando estiver ouvindo-a, clique no botão.</small></p>
+            <button class="mudaTela btn-azul">Continuar</button>
+        </div>
+
+        <div id="tela6" class="invisivel letra2 temporizado tela-centro" fundo="fundo2" style="color: #FFF;" tempo="3000" >
+            <div tempo="3000">
+                <p>Bom, então vamos lá...</p>
+            </div>
+            <div tempo="3000">
+                <p>eu queria que você soubesse de algumas coisas.</p>
+            </div>
+            <div tempo="3000" final="true">
+                <p>Fiz esse presente para você.</p>
+            </div>
+        </div>
+        
+        </table>
+        <div id="tela7" class="invisivel temporizado letra2 tela-centro" fundo="fundo3" style="color: #FFF;"  tempo="3000" >
+            <div tempo="3000">
+                <p>As vezes é difícil imaginar...</p>
+            </div>
+            <div tempo="2500">
+                <p>que alguém pode aparecer do nada...</p>
+            </div>
+            <div tempo="2500">
+                <p>e transformar completamente...</p>
+            </div>
+            <div tempo="4000">
+                <p>a nossa perspectiva de vida.</p>
+            </div>
+            <div tempo="4000" final="true">
+                <p>Assim como você fez com a minha.</p>
+            </div>
+        </div>
+
+        <div id="tela8" class="tela-centro tela" fundo="fundo4" tempo="6000">
+         
+            <p>E eu quero te mostrar isso.</p>
+
+            <button class="mudaTela btn-rosa">Continuar</button>
+
+        </div>
+
+        <div id="tela9" class="tela">
+         
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">1. Mensagens</h2>
+                    <img src="imagens/tela8-1.png" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Em tantos anos eu nunca senti tanto interesse em uma pessoa.</strong></p>
+                </div>
+                <hr>
+                <p><strong class="letra-vermelha">E quando digo interesse</strong>, é a vontade de conhecer, conversar e me envolver nos seus assuntos.</p>
+                <p><strong class="letra-vermelha">Conversas</strong> que demoram 15 minutos para serem lidas e mais de meia hora para serem respondidas.</p>
+                <img src="imagens/tela8-2.png" alt="">
+                <p><strong class="letra-vermelha">Graças a Deus você é a primeira pessao que eu vejo quando eu acordo, e a ultima quando eu vou dormir</strong></p>
+                <p><strong class="letra-vermelha">Você é tão especial</strong>, que não há nenhuma palavra que defina você!, pois você é algo raro e único!</p>
+
+            </div>
+
+            <button class="mudaTela btn-rosa mt-3">Continuar</button>
+
+        </div>
+
+        <div id="tela10" class="tela">
+
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">2. Momentos marcantes</h2>
+                    <img src="./imagem/gata.png" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Essa é minha foto favorita sua.</strong></p>
+                </div>
+                <hr>
+                <p><span class="letra2 letra-vermelha" style="font-size: 1em;">Eu me apaixonei por você mais de uma vez.</span><br>Até hoje eu te olho com jeito de 8 anos atrás <strong class="text-muted">"Com a mesma cara e olhar de bobo apaixonado"</strong><strong class="text-muted"></strong>?</p>
+                <p>Motivos para amar você:</p>
+                <ul>
+                    <li><strong class="letra-vermelha">Primeiro Motivo:</strong> Toda vez que estou perto de você, me sinto o homem mais feliz e mais sortudo do mundo, por estar ao lado de alguém que faz bem para todas as pessoas ao seu redor. Me pego olhando pra voce e fico pensando: <strong class="text-muted">"Cara, ela é demais!"</strong>. Sou muito sortudo por ter o amor dessa mulher.</li>
+                    <li><strong class="letra-vermelha">Segundo Motivo:</strong> Mesmo com o passar do tempo, eu continuo apaixonado por você do mesmo jeito. Parece que foi ontem que eu descobri que te amava</li>
+                    <li><strong class="letra-vermelha">Terceiro Motivo:</strong> Você é a unica pessoa que eu conheço que me estressa e me faz sentir amado na mesma proporção.</li>
+                    <li><strong class="letra-vermelha">Quarto Motivo:</strong> Obrigado por ser minha companheira em tudo, na vida, com o Vasco e com o Eros. Te amo</li>
+                </ul>
+
+                <hr>
+
+                <div class="text-center">
+                    <p>E esse é só o começo.</p>
+                    <p><strong class="text-muted">O nosso começo.</strong></p>
+                </div>
+
+                
+
+            </div>
+
+            <button class="mudaTela btn-rosa mt-3">Continuar</button>
+
+        </div>
+
+        <div id="tela11" class="tela">
+
+            <div class="text-left">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">3. O que você mudou em mim</h2>
+                    <img src="./imagem/vic2.png" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Essa foto significa o que eu quero pelo resto da minha vida. Nossa familia linda e você comigo pra sempre</strong></p>    
+                </div>
+                <hr>
+                <p class="letra-vermelha"><strong>Voce sempre foi o meu objetivo</strong></p>
+                <p></p>
+                <p>Desde a primeira vez que eu te vi, avisei os meus amigos que se um dia eu tivesse a oportunidade <strong class="letra-vermelha">eu namoraria com você</strong></p>
+                <hr>
+                <p>Se passaram 8 anos e hoje estou casado com você</p>
+                <p>Foi a melhor decisão que tomei na minha vida! Obrigado por ser minha companheira</p>
+                <p class="letra-vermelha">Antes de você<strong> a vida não fazia sentindo, eu não sabia o que era amor de verdade</strong></p>
+                <hr>
+                <p><strong class="letra-vermelha"> Você me ensinou o que é amar e se sentir amado de verdade.</strong> </p>
+                <p><strong class="letra-vermelha">Eu sei que sou chato as vezes</strong> e fico jogando ou trabalhando rs, mas você é e sempre será a minha prioridade</p>
+                <hr>
+                <p>As vezes me pego pensando no que teria acontecido se eu não tivesse você.</p>
+                <p>Ia perder meu tempo procurando pessoas vazias no Tinder para continuar tendo uma vida vazia com outras pessoas vazias.</p>
+                <h3 class="letra-vermelha mt-5 mb-5">Você me faz bem.</h3>
+
+            </div>
+
+            <button class="mudaTela btn-rosa">Continuar</button>
+
+        </div>
+
+        <div id="tela12" class="tela">
+            <h2 class="letra-vermelha">Toda vez que chego em casa e te vejo lá, penso o quão sortudo eu sou por ter você na minha vida</h2>
+            <p>Você é a mulher mais linda e incrivél desse mundo!!!</p>
+
+            <img src="./imagem/vic3.png" alt="">
+
+            <button class="mudaTela btn-rosa mt-3">Continuar</button>
+        </div>
+
+        <div id="tela13" class="tela">
+            <h2 class="letra-vermelha">O nosso memorial</h2>
+            <p>Você sabe que eu não sou a pessoa mais tranquila do mundo, mas<br>... <strong class="letra-vermelha"> você é a unica pessoa que me estressa e me acalma na mesma proporção</strong></p>
+            <hr>
+            <p>Te amo mais que jogar LOL</p>
+
+
+            
+
+            
+
+            <button class="mudaTela btn-rosa mt-5">Continuar</button>
+
+        </div>
+
+        <div id="tela14" class="invisivel temporizado letra2 tela-centro" fundo="fundo5" style="color: #FFF;" tempo="2000" >
+            <div tempo="3000">
+                <p>E só de pensar..</p>
+            </div>
+            <div tempo="2500">
+                <p>onde tudo começou...</p>
+            </div>
+            <div tempo="3000" >
+                <img src="imagens/tela11-1.png" class="custom" width="250" alt="">
+            </div>
+            <div tempo="3000">
+                <p>E tudo que ainda temos para aproveitar</p>
+            </div>
+            <div tempo="4000">
+                <p>Nosso futuro vai ser incrivel, repleto de conquistas.</p>
+            </div>
+           
+            <div tempo="2500" final="true">
+                <p>Te amar me faz feliz demais. ❤️</p>
+            </div>
+
+            <div id="tela20" class="invisivel temporizado letra2 tela-centro" fundo="fundo6" style="color: #FFF;" tempo="1500" >
+                <div tempo="2600" class="text-center">
+                    <p class="mb-0">Obrigado por estar comigo.</p>
+                    <div class="text-center">
+                        <span style="font-size:0.4em; color: #555;">Fim</span>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        </div>
+       
+        
+        
+ 
+        
+
+
+    
+
+    <!--<script src="assets/js/bootstrap.min.js"></script>-->
+
+    <script src="assets/script.js"></script>
+    <script src="./script.js"></script>
+    <!--<script src="assets/all.min.js"></script>-->
+
+</body>
+</html>
